@@ -1,3 +1,3 @@
-# Strapi application
+# strapi-demo
 
-A quick description of your strapi application
+Learning nodejs headless cms strapi for creating api with frontend project.
