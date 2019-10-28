@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "cases",
+  "info": {
+    "name": "case",
+    "description": "案例"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "intro": {
+      "required": true,
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "desc": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
