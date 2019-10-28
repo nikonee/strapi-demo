@@ -1,3 +1,3 @@
 # strapi-demo
 
-Learning nodejs headless cms strapi for creating api with frontend project.
+A strapi demo for learning headless cms.
