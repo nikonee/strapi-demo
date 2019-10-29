@@ -31,6 +31,9 @@
     "desc": {
       "type": "string",
       "required": true
+    },
+    "type": {
+      "type": "integer"
     }
   }
 }

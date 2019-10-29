@@ -22,17 +22,17 @@
       "required": true,
       "type": "date"
     },
-    "cover": {
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": true
     },
-    "content": {
-      "type": "richtext"
-    },
-    "date": {
-      "type": "date"
+    "type": {
+      "type": "integer"
     }
   }
 }

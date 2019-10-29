@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "banners",
+  "info": {
+    "name": "banner",
+    "description": "首页轮播图"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

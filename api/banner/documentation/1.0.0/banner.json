@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/news": {
+    "/banners": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/New"
+                    "$ref": "#/components/schemas/Banner"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "New"
+          "Banner"
         ],
         "parameters": [
           {
@@ -195,7 +195,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/New"
+                  "$ref": "#/components/schemas/Banner"
                 }
               }
             }
@@ -233,7 +233,7 @@
         },
         "summary": "",
         "tags": [
-          "New"
+          "Banner"
         ],
         "requestBody": {
           "description": "",
@@ -241,14 +241,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewNew"
+                "$ref": "#/components/schemas/NewBanner"
               }
             }
           }
         }
       }
     },
-    "/news/count": {
+    "/banners/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -300,12 +300,12 @@
         },
         "summary": "",
         "tags": [
-          "New"
+          "Banner"
         ],
         "parameters": []
       }
     },
-    "/news/{id}": {
+    "/banners/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -315,7 +315,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/New"
+                  "$ref": "#/components/schemas/Banner"
                 }
               }
             }
@@ -353,7 +353,7 @@
         },
         "summary": "",
         "tags": [
-          "New"
+          "Banner"
         ],
         "parameters": [
           {
@@ -377,7 +377,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/New"
+                  "$ref": "#/components/schemas/Banner"
                 }
               }
             }
@@ -415,7 +415,7 @@
         },
         "summary": "",
         "tags": [
-          "New"
+          "Banner"
         ],
         "requestBody": {
           "description": "",
@@ -423,7 +423,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewNew"
+                "$ref": "#/components/schemas/NewBanner"
               }
             }
           }
@@ -489,7 +489,7 @@
         },
         "summary": "",
         "tags": [
-          "New"
+          "Banner"
         ],
         "parameters": [
           {
@@ -508,24 +508,12 @@
   },
   "components": {
     "schemas": {
-      "New": {
+      "Banner": {
         "required": [
-          "id",
-          "title",
-          "time",
-          "image"
+          "id"
         ],
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "time": {
-            "type": "string"
-          },
-          "content": {
             "type": "string"
           },
           "image": {
@@ -573,37 +561,17 @@
                 "type": "string"
               }
             }
-          },
-          "type": {
-            "type": "integer"
           }
         }
       },
-      "NewNew": {
-        "required": [
-          "title",
-          "time"
-        ],
-        "properties": {
-          "title": {
-            "type": "string"
-          },
-          "time": {
-            "type": "string"
-          },
-          "content": {
-            "type": "string"
-          },
-          "type": {
-            "type": "integer"
-          }
-        }
+      "NewBanner": {
+        "properties": {}
       }
     }
   },
   "tags": [
     {
-      "name": "New"
+      "name": "Banner"
     }
   ]
 }

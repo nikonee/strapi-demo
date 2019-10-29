@@ -574,6 +574,9 @@
           },
           "desc": {
             "type": "string"
+          },
+          "type": {
+            "type": "integer"
           }
         }
       },
@@ -592,6 +595,9 @@
           },
           "desc": {
             "type": "string"
+          },
+          "type": {
+            "type": "integer"
           }
         }
       }
